@@ -67,6 +67,7 @@ class ProfileObservableViewModel : ObservableViewModel() {
 
     fun onLike() {
         likes.increment()
+        //notifyPropertyChanged此时触发下面的@Bindable注解方法
         // You control when the @Bindable properties are updated using `notifyPropertyChanged()`.
         notifyPropertyChanged(BR.popularity)
     }

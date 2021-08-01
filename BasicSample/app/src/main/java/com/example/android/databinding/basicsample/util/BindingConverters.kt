@@ -40,6 +40,7 @@ object ConverterUtil {
  *
  * There is no need to specify that this converter should be used. [BindingConversion]s are
  * applied automatically.
+ * BindingConversion，这个地方其实是全局的，这里不是针对某个view的，直接将布尔值转换成view的可见和不可见状态
  */
 object BindingConverters{
 

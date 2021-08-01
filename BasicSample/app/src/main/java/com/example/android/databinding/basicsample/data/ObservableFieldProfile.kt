@@ -25,5 +25,6 @@ import androidx.databinding.ObservableInt
 data class ObservableFieldProfile(
         val name: String,
         val lastName: String,
-        val likes: ObservableInt
+        val likes: ObservableInt,
+        var age:Int//ObservableInt的作用是当该属性发生变化的时候，能立马更新到页面上，而这里用普通的属性时候，是没有变化的，页面收不到该属性的变化
 )

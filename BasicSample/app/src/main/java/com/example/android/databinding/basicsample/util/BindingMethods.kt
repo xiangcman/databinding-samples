@@ -36,6 +36,9 @@ import android.widget.ImageView
  *   }
  * ```
  */
+/**
+ * app:srcCompat是自定义属性，其实就是用来代替imageView的setImageResource方法
+ */
 @BindingMethods(
         BindingMethod(type = ImageView::class,
                 attribute = "app:srcCompat",

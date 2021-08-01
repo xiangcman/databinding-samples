@@ -81,6 +81,7 @@ object BindingAdapters {
 
     private fun getAssociatedColor(popularity: Popularity, context: Context): Int {
         return when (popularity) {
+            //默认情况下通过colorForeground属性拿到颜色值
             Popularity.NORMAL -> context.theme.obtainStyledAttributes(
                     intArrayOf(android.R.attr.colorForeground)).getColor(0, 0x000000)
             Popularity.POPULAR -> ContextCompat.getColor(context, R.color.popular)

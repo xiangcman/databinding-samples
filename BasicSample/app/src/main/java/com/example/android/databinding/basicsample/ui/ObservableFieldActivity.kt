@@ -31,7 +31,7 @@ import com.example.android.databinding.basicsample.databinding.ObservableFieldPr
  */
 class ObservableFieldActivity : AppCompatActivity() {
 
-    private val observableFieldProfile = ObservableFieldProfile("Ada", "Lovelace", ObservableInt(0))
+    private val observableFieldProfile = ObservableFieldProfile("Ada", "Lovelace", ObservableInt(0),0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,5 +48,6 @@ class ObservableFieldActivity : AppCompatActivity() {
      */
     fun onLike(view: View) {
         observableFieldProfile.likes.set(observableFieldProfile.likes.get() + 1)
+        observableFieldProfile.age++
     }
 }
